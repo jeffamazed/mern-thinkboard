@@ -23,6 +23,12 @@ if (process.env.NODE_ENV !== "production") {
       origin: "http://localhost:5173",
     }),
   );
+} else {
+  app.use(
+    cors({
+      origin: "https://mern-thinkboard-production-ec52.up.railway.app/",
+    }),
+  );
 }
 
 // TODO: disable to save quota, activate when launch
