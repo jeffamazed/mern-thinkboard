@@ -7,7 +7,7 @@ const rateLimiter = async (req, res, next) => {
     throw new CustomAPIError(
       "Too many requests.",
       429,
-      `Too many requests on ${req.url} from ${req.ip}!`
+      `Too many requests on ${req.url} from ${req.ip}!`,
     );
   }
 
