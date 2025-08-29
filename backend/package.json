@@ -1,0 +1,29 @@
+{
+  "name": "mern-thinkboard-backend",
+  "version": "1.0.0",
+  "description": "Backend for MERN Thinkboard project.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon --env-file=.env src/server.js",
+    "start": "node --env-file=.env src/server.js"
+  },
+  "keywords": [
+    "mern",
+    "backend",
+    "node",
+    "express"
+  ],
+  "private": true,
+  "author": "jeffamazed",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@upstash/ratelimit": "^2.0.6",
+    "@upstash/redis": "^1.35.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "mongoose": "^8.18.0"
+  }
+}

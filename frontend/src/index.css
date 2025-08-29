@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dim --prefersdark, dim;
+}
+
+body {
+  overflow-x: hidden;
+  color: #0f0f0f;
+}
+
+@utility note-card-article {
+  @apply rounded-xl bg-base-300 dark:bg-base-100 hover:shadow-md hover:scale-[1.01] focus-visible:scale-[1.01] dark:shadow-white/50 shadow-gray-700/50 transition-all duration-100 border-t-4 border-primary outline-none focus-visible:ring-2 ring-primary focus-visible:ring-offset-2 dark:ring-offset-black/90;
+}
+
+@utility styling-dark {
+  @apply absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#0f0f0f_60%,#00ff9d40_100%)];
+}
+
+@utility styling-light {
+  @apply absolute inset-0 -z-10 h-full w-full items-center px-5 py-24
+    [background:radial-gradient(125%_125%_at_50%_10%,#f9f9f9_60%,#8f7bf5_100%)];
+}
+
+@utility section {
+  @apply min-h-dvh pt-22;
+}
+
+@utility form-control {
+  @apply flex flex-col gap-2;
+}
+
+@utility chk {
+  @apply border border-red-500;
+}
+
+@utility pagination-btn {
+  @apply btn text-base-content text-xs;
+}
